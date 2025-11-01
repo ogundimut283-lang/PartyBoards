@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Party Boards 🎉</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <!-- Chrome Built-in WRITER-API AI Origin Trial tokens -->
+  <meta http-equiv="origin-trial" content="Amba/61pLfwOc6XAIqSOtgsQOYAR+oWLj3DAFRzDB1Yk/zKQC9FqP6Z4I87NwXKA5AL3QDYcelfqJcF7+yYViwsAAABOeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiQUlXcml0ZXJBUEkiLCJleHBpcnkiOjE3NzY3Mjk2MDB9">
+  <!-- Chrome Built-in REWRITER-API AI Origin Trial tokens -->
+  <meta http-equiv="origin-trial" content="Avj6zBcgGqPlRkL2QFisBBm0ueWq7Kx6wMlo0E8YEbEF77Px6qtSijCzvjHhvt5xwO+iM9Oyfkun3Cc6xJ1TqwkAAABQeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiQUlSZXdyaXRlckFQSSIsImV4cGlyeSI6MTc3NjcyOTYwMH0=">
+  <!-- Chrome Built-in PROMPT-API AI Origin Trial tokens -->
+  <meta http-equiv="origin-trial" content="AhgUGpciITEzvh3MoMmiJNhHmBMjLVPBmOQdbKVzil07/9n4b4W03l8BkgZoZ3SupDMvcD2rDcXO8yFJbH6r+AUAAABdeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjU1MDAiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDB9">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">🎉</span>
+        <h1>Party Boards</h1>
+      </div>
+
+      <button id="themeToggle" class="btn btn-secondary">🌙 Dark Mode</button>
+      <button id="newChat" class="btn btn-secondary">🆕 New Chat</button>
+
+      <div class="panel">
+        <h3>Saved Boards</h3>
+        <div id="savedList" class="saved-list"></div>
+        <div class="panel-actions">
+          <button id="clearAll" class="btn btn-secondary">Clear All</button>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <p>Chrome Built-in AI • PartyBoards &copy; 2025</p>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <section id="output" class="output">
+        <div class="bubble poppy">
+          <p>Hey hey! I’m <b>Poppy</b>, your enthusiastic and chaotic party planner 🎀<br>
+          Tell me about your event and I’ll whip up a dazzling Party Board — themes, décor, menu, and games galore!</p>
+        </div>
+      </section>
+
+      <section class="composer">
+        <label for="eventDesc" class="label">What are we planning?</label>
+        <textarea id="eventDesc" class="input" rows="3"
+          placeholder="e.g., A cozy Christmas dinner for 50 students with games and a cocoa bar"></textarea>
+
+        <div class="row">
+          <div class="group">
+            <label class="sub">Detail level</label>
+            <select id="detailLevel" class="select">
+              <option value="basic">Basic</option>
+              <option value="detailed" selected>Detailed</option>
+              <option value="elaborate">Elaborate</option>
+            </select>
+          </div>
+
+          <div class="group">
+            <label class="sub">Rewrite Tone</label>
+            <select id="tone" class="select">
+              <option value="poppy" selected>Poppy (Fun)</option>
+              <option value="formal">Formal</option>
+              <option value="kids">Kid-Friendly</option>
+              <option value="corporate">Corporate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="generate" class="btn btn-primary">Plan with Poppy ✨</button>
+          <button id="moreGames" class="btn">More Games/Activities 🎲</button>
+          <button id="moreFood" class="btn">More Food Ideas 🍽️</button>
+          <button id="summarizeBoard" class="btn">Summarize → Invitation 📢</button>
+          <div class="spacer"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="persona.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
